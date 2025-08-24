@@ -12,8 +12,8 @@ FROM openjdk:17-alpine
 
 WORKDIR /app
 
-COPY --from=build /app/target/finalProject-0.0.1-SNAPSHOT.jar finalProject.jar
+COPY --from=build /app/target/bookroom-0.0.1-SNAPSHOT.jar bookroom.jar
 
-ENTRYPOINT ["java", "-jar" ,"finalProject.jar"]
+ENTRYPOINT ["java", "-jar" ,"bookroom.jar"]
 
 EXPOSE 8080
